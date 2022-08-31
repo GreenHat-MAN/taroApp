@@ -1,7 +1,7 @@
 import { View } from '@tarojs/components'
-import React, { FC } from 'react'
+import { inject, observer } from 'mobx-react'
 
-const search: FC = () => {
-  return <View>首页</View>
+const home: React.FC = () => {
+  return <View>主页</View>
 }
-export default search
+export default inject('store')(observer(home))
