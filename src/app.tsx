@@ -9,6 +9,7 @@ const store = {
   counterStore
 }
 
+export type Store = typeof store
 class App extends Component<PropsWithChildren> {
   componentDidMount () {}
 
